@@ -1,0 +1,62 @@
+may <mmaayy@yahoo.com> wrote:
+
+> I have downloaded your CVRT2WBMP and do some testing
+> but it doesn't work. The questions are;
+> 
+> 1. Do I have to register the DLL file if I want to
+> use
+> it by HTTP protocal?
+> 
+
+Sure, but in unregistered version DLL adds a small logo at the bottom of image, if image size is larger than 8x8. 
+
+> 2. The code I am using but it doesn't work is;
+> 
+> <img
+> src="/scripts/i2wbmp.dll?src=test.gif&dither=stucki&negative&noAlign"
+> alt="logo" />
+> 
+
+/scripts/i2wbmp.dll?dither=stucki&src=/test.gif
+
+Please note you must provide absolute file name path or use web server's virtual roots. In example you given relative path name used; it is incorrect.
+
+I can explain this limitation in two words- DLL does not try to search information in http header to know where is base path used in page. From other side, this information in some cases is useless.
+
+Instead, after first startup, DLL load virtual roots used by IIS or PWS, so if your put images in folder such as /icon or /img, it works.
+
+> 
+> 3. Can I use the http protocal for image path
+> (...?src=http://localhost&...)
+
+Yes of course
+
+> 4. Can I use the DLL in Coldfusion application? If
+> so,
+> please suggest how to.
+> 
+
+Actually I don't know. Perhaps you can find a way to use filter in web server for images (redirect to DLL or smth like this) so you can use links like src=/icon/a.jpg at the server side, but users see filtered version. 
+
+-----
+
+may <mmaayy@yahoo.com> wrote:
+
+> 1. About the DLL registration. I meant register in
+> windows (using regsvr32), do I need to do so before?
+
+No, DLL is ISAPI module so registartion OLE automation server is not required.
+
+> 2. I read in readme.txt, it described that we cannot save wbmp file for unregistered version so, if I create wml file and just convert and display on the wap phone simulator on the fly, can it be done?
+
+It is not correct, you can save one image per one click. You can not save ALL wbmp images in folder by one click.
+
+You can also use i2wbmp console version
+
+i2wbmp [-?][-r][-m DitherMode][-o Path][-v] File(s)|FileMask|Directory
+
+in your batch files.
+
+> 3. I have edited as you suggested for no.2 question but it still does not work. Here is the code in wml
+
+Hmm, I dont know. I'll review why it doesnt work, at this moment you can save images using cvrt2wbmp to wbmp.

@@ -1,0 +1,35 @@
+CVRT2WBMP WBMP mage convertor
+Copyright © 2000-2001 by Andrei Ivanov. All rights reserved.
+
+The use of this product constitutes your acceptance of the following 
+terms and conditions and your agreement to abide by them. This is a 
+legal agreement between you and me. By using this software, you are 
+agreeing to be bound by the terms of this agreement.
+
+You are granted a nonexclusive license to use this software under the
+terms stated in this agreement. You may not rent or lease the software,
+neither may you transfer it to another party on a permanent or temporary
+basis. You may not reverse engineer, decompile, or disassemble this
+software, except and only to the extent that such activity is expressly
+permitted by applicable law notwithstanding this limitation.
+
+THIS SOFTWARE AND ACCOMPANYING DOCUMENTATION ARE PROVIDED "AS IS" WITHOUT
+WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED.THE ENTIRE RISK ARISING
+OUT OF USE AND PERFORMANCE OF THIS SOFTWARE IS ASSUMED BY YOU.
+
+I'll not be liable for any special, incidental, consequential,
+indirect or similar damages due to the loss of data, loss of business
+profits, business interruption or any other reason arising
+from the use of this software. In no event shall me liability for any
+damages ever exceed the price paid for the license to use the software,
+regardless of the form of the claim. Because some states do not allow
+the exclusion or limitation of liability for consequential or incidental
+damages, the above limitation may not apply to you. If any provision of
+this agreement is found void, invalid or unenforceable, it will not
+affect the validity of the balance of this agreement, which shall
+remain valid and enforceable according to its terms.
+
+Should you have any questions concerning this utility, please contact:
+
+Andrei Ivanov,
+mailto:andy@sitc.ru or aivanov@hotmail.ru
